@@ -21,7 +21,7 @@ The complete deployable site is in `dist/`. It contains static HTML, CSS, an SVG
 
 ## Deploy to Cloudflare Pages
 
-Deploys on `main` to Cloudflare Pages.
+Deploys on `main` to Cloudflare Pages at https://cryptoconspiracybench.org.
 
 ## Update results
 
