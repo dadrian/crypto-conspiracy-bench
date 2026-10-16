@@ -1,0 +1,62 @@
+:root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; color: #111; background: #fff; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1248px; margin: auto; padding: 110px 32px 32px; }
+a { color: inherit; text-underline-offset: 4px; }
+a:hover { color: #a05220; }
+a:focus-visible, [tabindex]:focus-visible { outline: 2px solid #a05220; outline-offset: 5px; }
+h1 { margin: 0; padding-bottom: 36px; border-bottom: 1px solid #e6e6e6; font-size: clamp(32px, 4.5vw, 52px); font-weight: 500; letter-spacing: -2px; line-height: 1.12; }
+.intro { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; margin-top: 34px; color: #777; }
+.intro p { margin: 0; font-size: 22px; line-height: 1.5; }
+.intro a { white-space: nowrap; font-size: 14px; text-decoration: none; }
+.intro a span { margin-left: 12px; font-size: 20px; }
+.leaderboard { margin-top: 76px; }
+figure { margin: 0; }
+.chart { border: 1px solid #e6e6e6; padding: 24px 10px 12px; }
+svg { display: block; width: 100%; height: auto; }
+.grid { stroke: #e9e9e9; stroke-width: 1; }
+.baseline { stroke: #777; stroke-width: 2; }
+.tick { fill: #777; font-family: monospace; font-size: 13px; }
+.score { fill: #111; font-family: monospace; font-size: 15px; font-weight: 600; }
+.company { font-size: 14px; fill: #222; }
+.axis { font-size: 14px; fill: #222; }
+figcaption { margin-top: 16px; color: #737373; font-size: 13px; line-height: 1.6; }
+#records { margin-top: 76px; scroll-margin-top: 24px; }
+.table-scroll { overflow-x: auto; border: 1px solid #e6e6e6; }
+table { border-collapse: collapse; width: 100%; text-align: left; font-size: 14px; line-height: 1.6; }
+thead th { padding: 18px 20px; border-bottom: 1px solid #e6e6e6; color: #737373; font-family: monospace; font-weight: 400; font-size: 12px; text-transform: uppercase; letter-spacing: .07em; }
+tbody th, tbody td { padding: 24px 20px; vertical-align: top; }
+tbody th { font-weight: 400; }
+.count { text-align: center; font-family: monospace; }
+.description { width: 56%; min-width: 300px; }
+h3 { font-weight: 500; margin: 0 0 7px; font-size: 16px; }
+.description p { margin: 0; }
+.direction { display: inline-block; color: #7b4a24; background: #f8f1e9; font-family: monospace; font-size: 11px; padding: 3px 8px; margin-top: 14px; }
+.sources a { display: block; margin-bottom: 6px; }
+.date, td:last-child { white-space: nowrap; }
+.methodology { margin-top: 64px; max-width: 850px; }
+.methodology h2 { font-size: 23px; font-weight: 500; letter-spacing: -.5px; margin: 0 0 20px; }
+.methodology p { font-size: 15px; line-height: 1.8; color: #666; margin: 0 0 14px; }
+footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid #e6e6e6; display: flex; gap: 20px; justify-content: space-between; color: #737373; font-size: 12px; line-height: 1.7; }
+.separator { margin: 0 8px; }
+.sr-only, .skip:not(:focus) { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.skip:focus { display: block; padding: 12px; }
+@media (min-width: 1500px) { main { padding-top: 130px; } }
+@media (max-width: 600px) {
+  main { padding: 52px 20px 24px; }
+  h1 { letter-spacing: -1.2px; padding-bottom: 26px; max-width: 100%; }
+  .intro { margin-top: 24px; align-items: start; gap: 20px; }
+  .intro p { font-size: 17px; }
+  .intro a { font-size: 12px; padding-top: 4px; }
+  .intro a span { margin-left: 3px; }
+  .leaderboard { margin-top: 46px; }
+  .chart { padding: 16px 0 0; }
+  .chart svg { margin: 12px 0; }
+  .company { font-size: 32px; }
+  .score, .tick { font-size: 30px; }
+  .axis { font-size: 28px; }
+  #records { margin-top: 46px; }
+  thead th, tbody th, tbody td { padding: 16px; }
+  .methodology { margin-top: 42px; }
+  footer { flex-direction: column; gap: 8px; margin-top: 42px; }
+}

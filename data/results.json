@@ -1,0 +1,46 @@
+{
+  "updated": "2026-10-16",
+  "companies": [
+    {
+      "name": "OpenAI",
+      "color": "#2c8c59"
+    },
+    {
+      "name": "Anthropic",
+      "color": "#c16b2b"
+    },
+    {
+      "name": "Google",
+      "color": "#e74c3c"
+    },
+    {
+      "name": "Meta",
+      "color": "#3879f0"
+    },
+    {
+      "name": "Moonshot",
+      "color": "#171717"
+    }
+  ],
+  "results": [
+    {
+      "id": "ecdsa-curve-origins",
+      "company": "Anthropic",
+      "title": "ECDSA Curve Origins",
+      "date": "2026-10-16",
+      "direction": "Evidence against a backdoor",
+      "description": "Claude recovered the generation process behind the NIST prime-curve seeds.",
+      "caveat": "The findings make deliberate backdoors less plausible; they are not a proof of their absence. Some skipped candidates, the B-163 seed, and several base-point origins remain unexplained.",
+      "sources": [
+        {
+          "name": "Anthropic",
+          "url": "https://www.anthropic.com/research/ecdsa-curve-origins"
+        },
+        {
+          "name": "Filippo Valsorda",
+          "url": "https://words.filippo.io/seeds-solved/"
+        }
+      ]
+    }
+  ]
+}
