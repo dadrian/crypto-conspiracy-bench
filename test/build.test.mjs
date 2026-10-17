@@ -7,15 +7,15 @@ const template = await readFile(`${root}src/index.html`, 'utf8');
 test('graph and records use the same counts and company lineup', () => {
   const html = render(data, template);
   assert.deepEqual(data.companies.map(c => c.name), ['OpenAI', 'Anthropic', 'Google', 'Meta', 'Moonshot']);
-  assert.match(html, /OpenAI: 0; Anthropic: 1; Google: 0; Meta: 0; Moonshot: 0/);
-  assert.equal((html.match(/<tr id=/g) || []).length, 1);
+  assert.match(html, /OpenAI: 0; Anthropic: 2; Google: 0; Meta: 0; Moonshot: 0/);
+  assert.equal((html.match(/<tr id=/g) || []).length, 2);
   assert.match(html, /https:\/\/www.anthropic.com\/research\/ecdsa-curve-origins/);
   assert.doesNotMatch(html, /Evaluator|<!-- (CHART|RECORDS|UPDATED) -->/);
 });
 test('new results update totals automatically', () => {
   const next = structuredClone(data);
   next.results.push({ ...next.results[0], id: 'another-result', company: 'OpenAI' });
-  assert.match(render(next, template), /OpenAI: 1; Anthropic: 1/);
+  assert.match(render(next, template), /OpenAI: 1; Anthropic: 2/);
 });
 test('unknown attribution and duplicate investigations fail validation', () => {
   const next = structuredClone(data);

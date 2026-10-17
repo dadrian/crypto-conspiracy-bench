@@ -1,0 +1,6 @@
+{
+  "url": "https://x.com/avhwl/status/2111579355730313695",
+  "id": "2111579355730313695",
+  "text": "int F[256], k = 0;\nfor (int i = 0; i < 256; i++) F[i] = -1;\nsrand48(48571);\nwhile (k < 256) {\n    int v = 256 * drand48();\n    if (F[v] < 0) F[v] = k++;\n}\nfor (int i = 0; i < 256; i++)\n    printf(\"%02x%c\", F[i], i % 16 == 15 ? '\\n' : ' ');",
+  "created_at": "Sat Oct 17 22:05:24 +0000 2026"
+}

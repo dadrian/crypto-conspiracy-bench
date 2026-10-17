@@ -26,3 +26,7 @@ Deploys on `main` to Cloudflare Pages at https://cryptoconspiracybench.org.
 ## Update results
 
 Results are stored in `data/results.json`. The page template is `src/index.html`. See [result docs](data/RESULTS.md) and [favicon docs](IMAGES.md).
+
+Verification experiments live in [`experimental/`](experimental/). The
+[Skipjack experiment](experimental/skipjack/README.md) includes a reproducible
+comparison of the claimed generator against the official F-table.

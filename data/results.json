@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "companies": [
     {
       "name": "OpenAI",
@@ -39,6 +39,29 @@
         {
           "name": "Filippo Valsorda",
           "url": "https://words.filippo.io/seeds-solved/"
+        }
+      ]
+    },
+    {
+      "id": "skipjack-s-box-origins",
+      "company": "Anthropic",
+      "title": "Skipjack S-box Origins",
+      "date": "2026-10-17",
+      "direction": "Evidence against a backdoor",
+      "description": "Claude recovered the generation process for the Skipjack cipher S-boxes.",
+      "caveat": "Independent reproduction confirms 173/256 entries using srand48(48571). The remaining 83 entries can be reconciled with 52 entry swaps derived from the official table, but the sources do not specify a rule for choosing those swaps. This supports a relationship to the generator, not a complete recovery of the historical design process or a conclusion about backdoors. Claude attribution is reported by the linked authors, not independently established by the experiment. See experimental/skipjack/README.md.",
+      "sources": [
+        {
+          "name": "Algorithm (Ava Howell)",
+          "url": "https://x.com/avhwl/status/2111579355730313695"
+        },
+        {
+          "name": "Claim (Steve Weis)",
+          "url": "https://x.com/sweis/status/2111545590073221206"
+        },
+        {
+          "name": "Verification",
+          "url": "https://github.com/dadrian/crypto-conspiracy-bench/tree/main/experimental/skipjack"
         }
       ]
     }
